@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALL IN ONE STUDIO</title>
+<link href="all in one.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- NAVBAR -->
+<nav>
+  <a href="#" class="logo">
+    <div class="logo-icon">📱</div>
+    <div>
+      <div class="logo-text">ALL IN ONE STUDIO</div>
+      <div class="logo-sub">MUHANGA, RWANDA</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#categories">Shop</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#order">Order</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a href="https://wa.me/250781401023?text=Hi+ALL+IN+ONE+STUDIO%2C+I+want+to+place+an+order!" target="_blank" class="order-btn" style="text-decoration:none">💬 Order on WhatsApp</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><span class="badge-dot"></span> Now Delivering Across Rwanda</div>
+    <h1 class="hero-title">
+      ALL IN<br>
+      <span>ONE</span>
+      <span class="accent2">STUDIO</span>
+    </h1>
+    <p class="hero-desc">MUHANGA's premier destination for premium phone accessories. Cases, chargers, earphones, screen protectors & more — shipped fast to your door.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/250781401023?text=Hi+ALL+IN+ONE+STUDIO%2C+I+want+to+shop+for+phone+accessories!" target="_blank" class="btn-primary">💬 Shop on WhatsApp</a>
+      <a href="https://wa.me/250781401023?text=Hi+ALL+IN+ONE+STUDIO%2C+I+want+to+place+an+order!" target="_blank" class="btn-secondary">📦 Place Order on WhatsApp</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="phone-mockup">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <div class="phone-screen-icon">📱</div>
+        <div class="phone-screen-text">ALL IN ONE<br>STUDIO</div>
+      </div>
+    </div>
+    <div class="floating-tag t1"><span class="tag-icon">🛡️</span><div><div style="font-weight:700">Screen Protectors</div><div style="color:var(--muted);font-size:11px">From RWF 2,000</div></div></div>
+    <div class="floating-tag t2"><span class="tag-icon">⚡</span><div><div style="font-weight:700">Fast Chargers</div><div style="color:var(--muted);font-size:11px">45W & 65W</div></div></div>
+    <div class="floating-tag t3"><span class="tag-icon">⭐</span><div><div style="font-weight:700">4.9 Rating</div><div style="color:var(--muted);font-size:11px">2,000+ reviews</div></div></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat-item"><div class="stat-num">500+</div><div class="stat-label">Products Available</div></div>
+  <div class="stat-item"><div class="stat-num">10K+</div><div class="stat-label">Happy Customers</div></div>
+  <div class="stat-item"><div class="stat-num">30+</div><div class="stat-label">Top Brands</div></div>
+  <div class="stat-item"><div class="stat-num">24H</div><div class="stat-label">MUHANGA Delivery</div></div>
+</div>
+
+<!-- CATEGORIES -->
+<section class="categories" id="categories">
+  <div class="section-header">
+    <div>
+      <div class="section-tag">// Browse By Category</div>
+      <h2 class="section-title">SHOP BY<br><span>CATEGORY</span></h2>
+    </div>
+    <a href="#products" class="view-all">View All Products ↗</a>
+  </div>
+  <div class="cat-grid">
+    <a href="#products" class="cat-card" onclick="filterProducts('Cases')">
+      <span class="cat-emoji">📱</span>
+      <div class="cat-name">Phone Cases</div>
+      <div class="cat-count">120+ products</div>
+    </a>
+    <a href="#products" class="cat-card" onclick="filterProducts('Chargers')">
+      <span class="cat-emoji">⚡</span>
+      <div class="cat-name">Chargers & Cables</div>
+      <div class="cat-count">85+ products</div>
+    </a>
+    <a href="#products" class="cat-card" onclick="filterProducts('Audio')">
+      <span class="cat-emoji">🎧</span>
+      <div class="cat-name">Earphones & Audio</div>
+      <div class="cat-count">60+ products</div>
+    </a>
+    <a href="#products" class="cat-card" onclick="filterProducts('Screen')">
+      <span class="cat-emoji">🛡️</span>
+      <div class="cat-name">Screen Protectors</div>
+      <div class="cat-count">90+ products</div>
+    </a>
+    <a href="#products" class="cat-card" onclick="filterProducts('Power')">
+      <span class="cat-emoji">🔋</span>
+      <div class="cat-name">Power Banks</div>
+      <div class="cat-count">35+ products</div>
+    </a>
+    <a href="#products" class="cat-card" onclick="filterProducts('Speakers')">
+      <span class="cat-emoji">🔊</span>
+      <div class="cat-name">Bluetooth Speakers</div>
+      <div class="cat-count">25+ products</div>
+    </a>
+    <a href="#products" class="cat-card" onclick="filterProducts('All')">
+      <span class="cat-emoji">✨</span>
+      <div class="cat-name">All Accessories</div>
+      <div class="cat-count">500+ products</div>
+    </a>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="section-header">
+    <div>
+      <div class="section-tag">// Featured Products</div>
+      <h2 class="section-title">BEST<br><span>SELLERS</span></h2>
+    </div>
+  </div>
+  <div class="products-filters">
+    <button class="filter-btn active" onclick="setFilter(this,'All')">All</button>
+    <button class="filter-btn" onclick="setFilter(this,'Cases')">Cases</button>
+    <button class="filter-btn" onclick="setFilter(this,'Chargers')">Chargers</button>
+    <button class="filter-btn" onclick="setFilter(this,'Audio')">Audio</button>
+    <button class="filter-btn" onclick="setFilter(this,'Screen')">Screen Protectors</button>
+    <button class="filter-btn" onclick="setFilter(this,'Power')">Power Banks</button>
+    <button class="filter-btn" onclick="setFilter(this,'Speakers')">Speakers</button>
+  </div>
+  <div class="products-grid" id="productsGrid"></div>
+</section>
+
+<!-- ORDER SECTION -->
+<section class="order-section" id="order">
+  <div class="order-grid">
+    <div class="order-info">
+      <div class="section-tag">// Place Your Order</div>
+      <h2>ORDER<br><span>ONLINE</span><br>FAST & EASY</h2>
+      <p>Fill in the form and we'll confirm your order via WhatsApp or call. Delivery available across Rwanda with same-day delivery in Muhanga.</p>
+      <ul class="delivery-steps">
+        <li class="delivery-step">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h4>Browse & Select</h4>
+            <p>Choose your phone accessories from our wide range of products</p>
+          </div>
+        </li>
+        <li class="delivery-step">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h4>Fill Order Form</h4>
+            <p>Tell us what you need, your address and preferred payment method</p>
+          </div>
+        </li>
+        <li class="delivery-step">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h4>Confirm via WhatsApp</h4>
+            <p>We confirm your order within 30 minutes and process payment</p>
+          </div>
+        </li>
+        <li class="delivery-step">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h4>Fast Delivery</h4>
+            <p>Same-day delivery in Muhanga, 1–3 days across Rwanda</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="order-form">
+      <h3 class="form-title">PLACE ORDER</h3>
+      <p class="form-subtitle">We'll confirm via WhatsApp & MoMo/Cash accepted</p>
+      <form id="orderForm" onsubmit="submitOrder(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-input" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" class="form-input" placeholder="+250 78X XXX XXX" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Delivery Location</label>
+          <select class="form-select" required>
+            <option value="">Select your district</option>
+            <option>Kigali – Gasabo</option>
+            <option>Kigali – Kicukiro</option>
+            <option>Kigali – Nyarugenge</option>
+            <option>Northern Province</option>
+            <option>Southern Province</option>
+            <option>Eastern Province</option>
+            <option>Western Province</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Specific Address</label>
+          <input type="text" class="form-input" placeholder="Sector,Street..." required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Products You Want</label>
+          <textarea class="form-textarea" placeholder="List the items you want, e.g: iPhone 12 case (black), Type-C fast charger 65W, Samsung A54 screen protector..." required></textarea>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Payment Method</label>
+            <select class="form-select">
+              <option>MTN MoMo</option>
+              <option>Airtel Money</option>
+              <option>Cash on Delivery</option>
+              <option>Bank Transfer</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Delivery Speed</label>
+            <select class="form-select">
+              <option>Standard (1–2 days)</option>
+              <option>Express (Same day – Muhanga)</option>
+              <option>Economy (3–5 days)</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="submit-btn">📦 Submit Order →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-us">
+  <div class="section-header">
+    <div>
+      <div class="section-tag">// Why Choose Us</div>
+      <h2 class="section-title">THE<br><span>DIFFERENCE</span></h2>
+    </div>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">✅</div>
+      <h3 class="feature-title">100% Genuine Products</h3>
+      <p class="feature-desc">All our products are sourced directly from certified distributors. No counterfeits, ever. We stand behind every item we sell.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">⚡</div>
+      <h3 class="feature-title">Same-Day Delivery in Muhanga</h3>
+      <p class="feature-desc">Order before 2 PM and receive your items the same day anywhere in Muhanga. Fast delivery to Kigali and all provinces within 1-2 days.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">💰</div>
+      <h3 class="feature-title">Best Prices in Rwanda</h3>
+      <p class="feature-desc">We source in bulk and pass the savings to you. Compare our prices and see why thousands choose ALL IN ONE STUDIO.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔄</div>
+      <h3 class="feature-title">Easy Returns & Warranty</h3>
+      <p class="feature-desc">Not satisfied? Return within 7 days for a full refund or exchange. Most products come with manufacturer warranty.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">💳</div>
+      <h3 class="feature-title">Multiple Payment Options</h3>
+      <p class="feature-desc">Pay with MTN MoMo, Airtel Money, cash on delivery, or bank transfer. Flexible and convenient for all customers.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎧</div>
+      <h3 class="feature-title">Expert Support Team</h3>
+      <p class="feature-desc">Our team is available 7 days a week to help you choose the right accessories for your device. Chat us on WhatsApp anytime.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT STRIP -->
+<div class="contact-strip" id="contact">
+  <div class="contact-item">📍 <span>MUHANGA, Rwanda</span></div>
+  <div class="contact-item">📞 <a href="tel:+250781401023">+250 781 401 023</a></div>
+  <div class="contact-item">💬 <a href="https://wa.me/250781401023">WhatsApp Us</a></div>
+  <div class="contact-item">🕐 <span>Mon–Sat: 8AM – 8PM</span></div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="logo">
+        <div class="logo-icon">📱</div>
+        <div>
+          <div class="logo-text">ALL IN ONE STUDIO</div>
+          <div class="logo-sub">Muhanga, Rwanda</div>
+        </div>
+      </a>
+      <p>Your one-stop shop for all phone accessories in Rwanda. Quality products, fast delivery, unbeatable prices.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul class="footer-links">
+        <li><a href="#">Phone Cases</a></li>
+        <li><a href="#">Chargers</a></li>
+        <li><a href="#">Earphones</a></li>
+        <li><a href="#">Screen Protectors</a></li>
+        <li><a href="#">Power Banks</a></li>
+        <li><a href="#">Bluetooth Speakers</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul class="footer-links">
+        <li><a href="#">How to Order</a></li>
+        <li><a href="#">Delivery Info</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Payment Methods</a></li>
+        <li><a href="#">Track Order</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul class="footer-links">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Wholesale</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Terms & Privacy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 ALL IN ONE STUDIO. All rights reserved.</span>
+    <span style="color:var(--accent)">Made with ❤️ in Muhanga, Rwanda 🇷🇼</span>
+  </div>
+</footer>
+
+<!-- CART PANEL -->
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<div class="cart-panel" id="cartPanel">
+  <div class="cart-header">
+    <h3>🛒 YOUR CART</h3>
+    <button class="close-cart" onclick="toggleCart()">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <div class="cart-empty"><span>🛒</span>Your cart is empty.<br>Start shopping!</div>
+  </div>
+  <div class="cart-footer" id="cartFooter" style="display:none">
+    <div class="cart-total">
+      <span>Total</span>
+      <span id="cartTotal">RWF 0</span>
+    </div>
+    <button class="submit-btn" onclick="checkout()">Proceed to Order →</button>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <span class="toast-icon">✅</span>
+  <span id="toastMsg">Added to cart!</span>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+const products = [
+  { id:1, name:'iPhone 12 Pro Armor Case', brand:'Apple Compatible', cat:'Cases', price:12000, emoji:'📱', badge:'hot', stars:5 },
+  { id:2, name:'Samsung Galaxy A54 Clear Case', brand:'Samsung Compatible', cat:'Cases', price:6500, emoji:'📱', badge:'new', stars:4 },
+  { id:3, name:'65W GaN Fast Charger', brand:'Baseus', cat:'Chargers', price:8000, emoji:'⚡', badge:'hot', stars:5 },
+  { id:4, name:'USB-C to Lightning Cable 2m', brand:'Anker', cat:'Chargers', price:8500, emoji:'🔌', badge:'', stars:4 },
+  { id:5, name:'Wireless Earbuds TWS Pro', brand:'JBL', cat:'Audio', price:35000, emoji:'🎧', badge:'hot', stars:5 },
+  { id:6, name:'iPhone 15 Tempered Glass', brand:'Nillkin', cat:'Screen', price:1500, emoji:'🛡️', badge:'new', stars:5 },
+  { id:7, name:'20000mAh Power Bank', brand:'Xiaomi', cat:'Power', price:40000, emoji:'🔋', badge:'', stars:4 },
+  { id:8, name:'Bluetooth Speaker Mini', brand:'JBL', cat:'Speakers', price:28000, emoji:'🔊', badge:'new', stars:5 },
+  { id:10, name:'Samsung S24 Leather Case', brand:'Samsung Compatible', cat:'Cases', price:18000, emoji:'📱', badge:'', stars:4 },
+  { id:11, name:'65W Fast Charging Cable', brand:'Ugreen', cat:'Chargers', price:7000, emoji:'⚡', badge:'hot', stars:5 },
+  { id:12, name:'Samsung Galaxy Screen Guard', brand:'Spigen', cat:'Screen', price:5500, emoji:'🛡️', badge:'', stars:4 },
+];
+
+let cart = [];
+let currentFilter = 'All';
+
+function renderProducts(filter='All') {
+  currentFilter = filter;
+  const grid = document.getElementById('productsGrid');
+  const filtered = filter === 'All' ? products : products.filter(p => p.cat === filter);
+  grid.innerHTML = filtered.map(p => `
+    <div class="product-card" data-cat="${p.cat}">
+      ${p.badge ? `<span class="product-badge ${p.badge}">${p.badge === 'new' ? 'NEW' : p.badge === 'hot' ? '🔥 HOT' : p.badge}</span>` : ''}
+      <div class="product-img">${p.emoji}</div>
+      <div class="product-info">
+        <div class="product-rating">
+          ${'<span class="star">⭐</span>'.repeat(p.stars)}${'<span class="star empty">☆</span>'.repeat(5-p.stars)}
+          <span class="rating-count">(${Math.floor(Math.random()*200+50)})</span>
+        </div>
+        <div class="product-name">${p.name}</div>
+        <div class="product-brand">${p.brand}</div>
+        <div class="product-footer">
+          <div class="product-price"><span class="currency">RWF</span>${p.price.toLocaleString()}</div>
+          <button class="add-cart" onclick="addToCart(${p.id})" title="Add to cart">+</button>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function setFilter(btn, filter) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderProducts(filter);
+}
+
+function filterProducts(cat) {
+  renderProducts(cat);
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    b.classList.remove('active');
+    if (b.textContent === cat || (cat==='All' && b.textContent==='All')) b.classList.add('active');
+  });
+}
+
+function addToCart(id) {
+  const product = products.find(p => p.id === id);
+  const existing = cart.find(c => c.id === id);
+  if (existing) existing.qty++;
+  else cart.push({...product, qty: 1});
+  updateCartUI();
+  showToast(`${product.emoji} ${product.name} added to cart!`);
+}
+
+function updateCartUI() {
+  const count = cart.reduce((s,c) => s+c.qty, 0);
+  document.getElementById('cartCount').textContent = count;
+  const total = cart.reduce((s,c) => s+(c.price*c.qty), 0);
+  document.getElementById('cartTotal').textContent = `RWF ${total.toLocaleString()}`;
+  const itemsEl = document.getElementById('cartItems');
+  const footerEl = document.getElementById('cartFooter');
+  if (cart.length === 0) {
+    itemsEl.innerHTML = '<div class="cart-empty"><span>🛒</span>Your cart is empty.<br>Start shopping!</div>';
+    footerEl.style.display = 'none';
+  } else {
+    footerEl.style.display = 'block';
+    itemsEl.innerHTML = cart.map(c => `
+      <div class="cart-item">
+        <div class="cart-item-img">${c.emoji}</div>
+        <div class="cart-item-info">
+          <div class="cart-item-name">${c.name}</div>
+          <div class="cart-item-price">RWF ${(c.price*c.qty).toLocaleString()}</div>
+          <div class="cart-item-qty">
+            <button class="qty-btn" onclick="changeQty(${c.id},-1)">−</button>
+            <span class="qty-num">${c.qty}</span>
+            <button class="qty-btn" onclick="changeQty(${c.id},1)">+</button>
+          </div>
+        </div>
+      </div>
+    `).join('');
+  }
+}
+
+function changeQty(id, delta) {
+  const item = cart.find(c => c.id === id);
+  if (!item) return;
+  item.qty += delta;
+  if (item.qty <= 0) cart = cart.filter(c => c.id !== id);
+  updateCartUI();
+}
+
+function toggleCart() {
+  document.getElementById('cartPanel').classList.toggle('open');
+  document.getElementById('cartOverlay').classList.toggle('open');
+}
+
+function checkout() {
+  const items = cart.map(c => `${c.qty}x ${c.name}`).join(', ');
+  const total = cart.reduce((s,c) => s+(c.price*c.qty), 0);
+  const textarea = document.querySelector('.form-textarea');
+  if (textarea) textarea.value = items;
+  toggleCart();
+  document.getElementById('order').scrollIntoView({behavior:'smooth'});
+  showToast('✅ Items added to order form!');
+}
+
+function submitOrder(e) {
+  e.preventDefault();
+  showToast('🎉 Order submitted! We\'ll confirm via WhatsApp soon.');
+  e.target.reset();
+  setTimeout(() => {
+    const wa = 'https://wa.me/250781401023?text=Hi+ALL+IN+ONE+STUDIO%2C+I+just+placed+an+order+on+your+website!';
+    window.open(wa, '_blank');
+  }, 1500);
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  document.getElementById('toastMsg').textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+// Init
+renderProducts();
+
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
